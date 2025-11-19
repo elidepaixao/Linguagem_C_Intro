@@ -3,12 +3,27 @@
 //declarando variaveis
 
 int main () {
-    int idade = 39;
-    float altura = 1.75;
-    char opcao = 'S';
-    char nome [20] = "Elide";
+    int idade, matricula;
+    float altura;
+    char nome [50];
 
-    printf("A idade de %s eh: %d\n", nome, idade);
+    printf("Digite sua matricula: \n");
+    scanf("%i", &matricula);
+
+    printf("Digite seu nome: \n");
+    scanf("%s", &nome);
+        
+    printf("Digite a sua idade: \n");
+    scanf("%d", &idade);
+
+    printf("Digite sua altura: \n");
+    scanf("%f", &altura);
+
+    printf("Nome do aluno: %s - Matricula: %d ", nome, matricula);
+    printf("Idade: %d - altura: %f", idade, altura);
+
+    return 0;
+
 
 }
 
@@ -20,3 +35,5 @@ int main () {
     %c: caractere;
     %s: string.
     */
+
+
